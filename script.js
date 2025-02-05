@@ -4,7 +4,7 @@ const button=document.getElementById('check-btn');
 
 button.addEventListener('click',function(){
     let str=document.getElementById('text-input').value;
-    input=str.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
+    let input=str.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
     console.log(input);
     event.preventDefault();
     if(input===''){
